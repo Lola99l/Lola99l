@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <link rel="stylesheet" type="text/css" href="Style/generalStyle.css">
+    <link rel="stylesheet" href="Style/operatorsStyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Style/codePage.css"> -->
+</head>
+<body>
+    <header>
+        <div>
+            <div class="menuList">
+                <nav>
+                  <img class="SM" src="images/fb logo.png" alt="" />
+                  <img class="SM" src="images/insta logo.png" alt="" />
+                  <img class="SM" src="images/twitter logo.png" alt="" />
+                  <a href="index.html">Home</a>
+                  <div class="dropdown">
+                    <button class="">Basics</button>
+                    <div class="dropdown-content">
+                      <a href="Variables.html">Variables</a>
+                      <a href="Data Types.html">Data Types</a>
+                      <a href="operators.html">Operators</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="dropdown">
+                    <button class="">Advanced</button>
+                    <div class="dropdown-content">
+                      <a href="ifStatments.html">If Statments</a>
+                      <a href="Loops.html">Loops</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="Feedback.html">FeedBack</a>
+                  <aside>
+                    <a href="phpscripts/logout.php">Log out</a>
+                  </aside>
+                </nav>
+              </div>
+        </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <article>
+            <h1 class="secHeader">Python's Operators</h1>
+            <p>
+                The operators in python are most commonly used to perform various operations on any variables and/or values. <br> Just like how we would use the <span class="bold">"+"</span> in  math to add two values together. <br>  
+                Speaking of Mathematical operations, their python operators are the most commonly used and they are as follow:
+            </p>
+            <section class="opTable">
+                <table class="mathOps">
+                    <thead>
+                        <tr>
+                            <th>Mathematical Term</th>
+                            <th>Python Operator</th>
+                            <th>Example</th>
+                            <!-- <th>Try</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Addition</td>
+                            <td>+</td>
+                            <td>a + b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                        <tr>
+                            <td>Sutraction</td>
+                            <td>-</td>
+                            <td>a - b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                        <tr>
+                            <td>Division</td>
+                            <td>/</td>
+                            <td>a / b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                        <tr>
+                            <td>Multiplication</td>
+                            <td>*</td>
+                            <td>a * b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                        <tr>
+                            <td>Modulus</td>
+                            <td>%</td>
+                            <td>a % b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                        <tr>
+                            <td>Floor Division</td>
+                            <td>//</td>
+                            <td>a // b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                        <tr>
+                            <td>Exponential</td>
+                            <td>**</td>
+                            <td>a ** b</td>
+                            <!-- <td>Try</td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+
+        <section class="diffOps">
+            <h2 class="secHeader">Different Operator Groups:</h2>
+            <br><nav class="ops">
+                <!-- <a href="#bitwise">Bitwise Operators</a> -->
+                <a href="#assignment">Assignment Operators</a>
+                <a href="#logical">Logical Operators</a>
+                <a href="#membership">Membership Operator</a>
+                <a href="#identity">Identity Operators</a>
+                <a href="#comparision">Comaprision Operators</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!-- <section id="bitwise">
+
+        </section>
+
+        <hr> -->
+
+        <section id="assignment">
+            <h2>Assignment Operators</h2>
+            <p>
+                These operators are a shortcuted way to assign a new value to a pre-existent variable
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pyhton Operator</th>
+                        <th>Example</th>
+                        <th>Equivalent</th>
+                        <!-- <th>Try</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td>a = 5</td>
+                        <td>a = 5</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>a += 10</td>
+                        <td>a = a + 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>a -= 10</td>
+                        <td>a = a - 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>a *= 10</td>
+                        <td>a = a * 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>a /= 10</td>
+                        <td>a = a / 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>a %= 10</td>
+                        <td>a = a % 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>//=</td>
+                        <td>a //= 10</td>
+                        <td>a = a // 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>a **= 10</td>
+                        <td>a = a ** 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>&=</td>
+                        <td>a &= 10</td>
+                        <td>a = a & 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>|=</td>
+                        <td>a |= 10</td>
+                        <td>a = a | 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>^=</td>
+                        <td>a ^= 10</td>
+                        <td>a = a ^ 10</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>>>=</td>
+                        <td>a >>= 2</td>
+                        <td>a = a >> 2</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td><<=</td>
+                        <td>a <<= 2</td>
+                        <td>a = a << 2</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="logical">
+            <h2>Logical Operators</h2>
+            <p>
+                These operators combine conditional statments, returns either true or false.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Python Operator</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                        <!-- <th>Try</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>and</td>
+                        <td>a > 3 and a < 10 </td>
+                        <td>Returs true if <span class="bold">Both</span> conditional statments are met. False otherwise.</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>or</td>
+                        <td>a < 3 or a > 10</td>
+                        <td>Returns true if <span class="bold">one or more</span> of the conditional statments are met. False only of both atatments arent met.
+                        </td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>not</td>
+                        <td>not(a > 3 and a < 10)</td>
+                        <td>Reverses the result of the conditional statments; returns false if the result is true, and vice verca.</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="membership">
+            <h2>Membership Operators</h2>
+            <p>
+                These operators are mainly used with objects, used to check if a sequence if present in the object.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Python Operator</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                        <!-- <th>Try</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>in</td>
+                        <td>a in b</td>
+                        <td>Returns True if a sequence with the specified value is present in the object</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>not in</td>
+                        <td>a not in b</td>
+                        <td>Returns True if a sequence with the specified value is not present in the object</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="identity">
+            <h2>Identity Operators</h2>
+            <p>
+                These operators are used to compare said objects, to compare weather they are the same object with the same memory location.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Python Operator</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                        <!-- <th>Try</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>is</td>
+                        <td>a is b</td>
+                        <td>Returns True if both variables are the same object</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>is not</td>
+                        <td>a is not b</td>
+                        <td>Returns True if both variables are not the same object</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="comparision">
+            <h2>Comparision Operators</h2>
+            <p>
+                These operators are used to comapare two values
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pyhton Operator</th>
+                        <th>Example</th>
+                        <!-- <th>Try</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Equal</td>
+                        <td>==</td>
+                        <td>x == y</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>Not Equal</td>
+                        <td>!=</td>
+                        <td>a != b</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>Greater than</td>
+                        <td>></td>
+                        <td>a > b</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>Greater than or equal to</td>
+                        <td>>=</td>
+                        <td>a >= b</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>Less than</td>
+                        <td><</td>
+                        <td>a < b</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                    <tr>
+                        <td>Less than or equal to</td>
+                        <td><=</td>
+                        <td>a <= b</td>
+                        <!-- <td>Try</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            Phone: 1234567899<br>
+            Fax: 7845965845<br>
+            Email: Prog101@gmail.com
+            <p class="rights">
+                ALL RIGHTS RESERVED &reg;
+            </p>
+        </div>
+    </footer> 
+</body>
+</html>

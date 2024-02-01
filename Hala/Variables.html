@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <link rel="stylesheet" type="text/css" href="Style/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="Style/codePage.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menuList">
+            <nav>
+              <img class="SM" src="images/fb logo.png" alt="" />
+              <img class="SM" src="images/insta logo.png" alt="" />
+              <img class="SM" src="images/twitter logo.png" alt="" />
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                <button class="">Basics</button>
+                <div class="dropdown-content">
+                  <a href="Variables.html">Variables</a>
+                  <a href="Data Types.html">Data Types</a>
+                  <a href="operators.html">Operators</a>
+                  
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="dropdown">
+                <button class="">Advanced</button>
+                <div class="dropdown-content">
+                  <a href="ifStatments.html">If Statments</a>
+                  <a href="Loops.html">Loops</a>
+                 
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="Feedback.html">FeedBack</a>
+              <aside>
+                <a href="phpscripts/logout.php">Log out</a>
+              </aside>
+            </nav>
+          </div>
+          </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <article>
+            <h1 class="secHeader">What is a variable?</h1>
+            <p>
+                A variable in python is a <span class="bold">symbolic name</span> that acts as some sort of <span class="bold">pointer</span>. <br> Once an object is assigined to a variable, that same variable can be reffered to throughout the rest of the implemented code by refrencing the <q>pointer</q> name.   
+            </p>
+            <section class="varDec">
+                <div class="declaration">
+                    <h2>Decleration</h3>
+                    <p class="decDesc">
+                        Declaring a variable in python differes from other programming languages, in such a way that you <span class="bold">do not need</span> to specify the variable type.
+                    </p>
+                    <div class="outerCodeCell">
+                        Example
+                        <div class="innerCodeCell">
+                            a = 5 <br>
+                            b = "python" <br>
+                            <br><span class="codeComment"># Variable types can be directly changed even after the have been set.</span> <br>
+                            <br> s = 12 <span class="codeComment"># Here s is of type int</span> <br>
+                            s = "Welcome" <span class="codeComment"># Now s is of type str</span> <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <section class="diffProp">
+            <h2 class="secHeader">Different Properties:</h2>
+            <p>
+                <br> Variables in python have certain properties that affect the way they are perceived by both the humman brain and the compiler itself.
+            </p>
+            <br><nav class="prop">
+                <a href="#casting">Casting</a>
+                <a href="#typeObtaining">Type Obtaining</a>
+                <a href="#Quotation">Quotation</a>
+                <a href="#caseSensitivity">Case-Sensitivity</a>
+            </nav>
+        </section>
+        <hr>
+        <section id="casting">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                       <h2>Variable Casting:</h2>
+                       <p class="explanation">
+                           When you are in need of specifying the data type of a certain variable for any which reason, you will use a concept known as <span class="bold">Casting</span>. <br>
+                           Casting if the variable will affect how it is saved in the program which in hand affects the way the variable could be used.
+                       </p>
+                       <p>
+                        In the three variable declaraed in the Example, all were given the same value of 3; but due to the casting we have implemented the way they are precieved differs.
+                       </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                X = int(3) <span class="codeComment"># X will be saved as 3</span> <br>
+                                Y = float(3) <span class="codeComment"># Y will be saved as 3.0</span> <br>
+                                Z = str(3) <span class="codeComment"># Z will be saved as '3'</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="typeObtaining">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Type Obtaining:</h2>
+                        <p class="explanation">
+                            After we declare any variable in the code program, we have the capability of figuring out the type of the variable in case we were unsure of it or to check if there was any casting used on the variable. This can be done via using the <span class="bold">type()</span> function. 
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 5 <br>
+                                b = "Hello World" <br>
+                                print(type(a)) <span class="codeComment"># The resulting output would be int</span> <br>
+                                print(type(b)) <span class="codeComment"># The resulting output would be str</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="Quotation">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                    <h2>Quotations:</h2>
+                    <p>
+                        Unlike the syntax of other programming languages, python doesnt differentiate between a single <span class="bold">quotation</span> and double <span class="bold">quotation</span> declared variables. As they are all seen as the same type of variable, they can be concatinated together without any errors emerging. <br>
+                    </p>
+                    <p>
+                        Both the declarations in the example shown are the exact same
+                    </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                p = 'Hello World' <br> <span class="codeComment"># Here the variable is declared using single quotations</span> <br>
+                                p = "Hello World" <br> <span class="codeComment"># Here the variable is declared using double quotations</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="caseSensitivity">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Case Senssitivity:</h2>
+                        <p>
+                            Python variable names are<span class="bold"> case-sensitive</span>; if the names differ no matter how miniscule the difference is they will save different values, these small differences will create new variables. 
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                c = 4 <br>
+                                C = "python"  <br>
+                                <span class="codeComment"># In this case, C doesnt overwrite c; they are different variables.</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+5 -->
+
+        <section class="Quiz">
+
+        </section>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            Phone: 1234567899<br>
+            Fax: 7845965845<br>
+            Email: Prog101@gmail.com
+            <p class="rights">
+                ALL RIGHTS RESERVED &reg;
+            </p>
+        </div>
+    </footer> 
+</body>
+</html>

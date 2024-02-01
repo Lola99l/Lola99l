@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <!-- <link rel="stylesheet" type="text/css" href="Style/generalStyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="Style/Feedback.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="menuList">
+                <nav>
+                  <img class="SM" src="images/fb logo.png" alt="" />
+                  <img class="SM" src="images/insta logo.png" alt="" />
+                  <img class="SM" src="images/twitter logo.png" alt="" />
+                  <a href="index.html">Home</a>
+                  <div class="dropdown">
+                    <button class="">Basics</button>
+                    <div class="dropdown-content">
+                      <a href="Variables.html">Variables</a>
+                      <a href="Data Types.html">Data Types</a>
+                      <a href="operators.html">Operators</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="dropdown">
+                    <button class="">Advanced</button>
+                    <div class="dropdown-content">
+                      <a href="ifStatments.html">If Statments</a>
+                      <a href="Loops.html">Loops</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="Feedback.html">FeedBack</a>
+                  <aside>
+                    <a href="phpscripts/logout.php">Log out</a>
+                  </aside>
+                </nav>
+              </div>
+        </div>
+        </div>
+        <br>
+    </header>
+    </header>
+    <br><br>
+    <main class="feedbackForm">
+            
+        <form method="post" action = "phpscripts/feedbackvildate.php">
+            <div class="pageTable">
+                <div class="pageRow">
+                    <div class="pageCell">
+    
+                    </div>
+    
+                    <div class="pageCell feedbackHead">
+                        <h2>Feedback Form</h2>
+                    </div>
+                </div>
+                <div class="pageRow">
+                    <div class="pageCell">
+    
+                    </div>
+                    <div class="pageCell midP">
+                        <p class="italicParagraph">
+                            Your feedback allows us to improve the quality of learing to the metrics that suit our students best.
+                        </p>
+                    </div>
+                </div>
+                <div class="pageRow">
+                    <div class="pageCell">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <div class="feedbackTable">
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="gender">Gender</label>
+                                        <ul class="genderSelect">
+                                            <li><input type="radio" name="gender"  value="male">
+                                                <label for="Male">Male</label>
+                                            </li>
+                                            <li><input type="radio" name="gender"  value="female">
+                                                <label for="Female">Female</label>
+                                            </li>
+                                           
+                                        </ul> 
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="age">Age:</label>
+                                        <input name="age" type="text" pattern="[0-9]{2}"  size="5" maxlength="5" >
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="fName">First Name:</label>
+                                        <input name="fName" type="text" size="25" maxlength="25" id="fName">
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="lName">Last Name:</label>
+                                        <input name="lName" type="text" size="25" maxlength="25" id="lName">
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="email">Emali:</label>
+                                        <input class="inAlign" type="email" name="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="phNum">Phone Number (Optional): </label>
+                                        <input 
+                                        name="phNum"
+                                        type="text" 
+                                        title="Invalid"
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                                        size="25" 
+                                        maxlength="25" 
+                                        
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="pageCell">
+                        <fieldset>
+                            <legend>Educational Information</legend>
+                            <div class="feedbackTable">
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="LOS">Level Of Study</label>
+                                        <select name="LOS" id="LOS">
+                                            <option>&nbsp;</option>
+                                            <option>Middle School</option>
+                                            <option>Secondary School</option>
+                                            <option>Bachelors Degree</option>
+                                            <option>Masters Degree</option>
+                                            <option>Higher Level</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="feedbackRoe">
+                                    <div class="feedbackCell">
+                                        <label for="COS">Country Of Study</label>
+                                        <input type="text" name="COS" size="25" maxlength="25" id="COS">
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="satisfied">Level Of Staistfaction</label><br>
+                                        <input type="radio" name="satisfied" value="Unsatisfied">
+                                        <label for="Unsatisfied">Unsatisfied</label>
+                                        <input type="radio" name="satisfied" value="Satisfied">
+                                        <label for="Satisfied">Satisfied</label>
+                                        <input type="radio" name="satisfied" value="Very Satisfied">
+                                        <label for="Vsatisfied">Very Satisfied</label>
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="Helpful1">Which Page(s) Were The Most Helpful</label>
+                                        <ul class="genderSelect">
+                                            <li>Syntax </li>
+                                            <li>Variables </li>
+                                            <li>Data Types </li>
+                                            <li>Loops </li>
+                                            <li>Operators </li>
+                                            <li>Advanced Data Types </li>
+                                        </ul>
+                                    </div>
+                                    <div class="feedbackCell alignR">
+                                        <ul class="genderSelect">
+                                            <li>&nbsp;</li>
+                                            <li>&nbsp;</li>
+                                            <label for="Helpful"></label>
+                                            <li><input type="checkbox" name="Helpful"  value="Syntax"></li>
+                                            <li><input type="checkbox" name="Helpful" value="Variables"></li>
+                                            <li><input type="checkbox" name="Helpful" value="Data Types"></li>
+                                            <li><input type="checkbox" name="Helpful" value="Loops"></li>
+                                            <li><input type="checkbox" name="Helpful" value="Operators"></li>
+                                            <li><input type="checkbox" name="Helpful" value="Advanced Data Types"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="pageCell">
+                        <fieldset>
+                            <legend>Publicity</legend>
+                            <div class="feedbackTable">
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="foundUs">How Did You Find Us?</label>
+                                        <input type="text"  name="foundUs" size="25" maxlength="25" id="foundUs">
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell">
+                                        <label for="recommend">Would You Recommend Us To Your Colleguse
+                                        <input type="radio" name="recommend" value="Yes">
+                                        <label for="Y">YES</label>
+                                        <input type="radio" name="recommend" value="No" >
+                                        <label for="N">NO</label>
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="feedbackRow">
+                                    <div class="feedbackCell"> 
+                                        <label for="suggestions">If You Have Any Suggestions For Improvment:</label><br>
+                                        <textarea name="suggestions"  cols="30" rows="10" placeholder="     Were All Ears"></textarea> 
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <!-- <footer>
+        <div class="contactInfo">
+            Phone: 1234567899<br>
+            Fax: 7845965845<br>
+            Email: Prog101@gmail.com
+            <p class="rights">
+                ALL RIGHTS RESERVED &reg;
+            </p>
+        </div>
+    </footer> -->
+</body>
+</html>

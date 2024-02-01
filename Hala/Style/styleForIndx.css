@@ -1,0 +1,303 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    padding: 0px;
+    margin: 0px;
+    background-color:#180148;
+}
+
+section.backgroundImg1{
+    background-image: url('../images/backdrop1.avif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    height: 600px;
+    width: 100%;
+}
+div.welcomeText{
+    width: 30%;
+    height: 200px;
+    margin-left: 100px;
+    text-align: left;
+    float: left;
+}
+.welcomeheadding{
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: left;
+}
+
+.learnButton{
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+}
+
+a.learnButton:hover{
+    background-color: #fffdd0;
+    padding: 10px;
+}
+
+.expect{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+.smallYellow{
+    background-color: gold;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.expectation{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 90px;
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+.whyPyhton{
+    background-color: white;
+}
+
+/*First Layout Table*/
+
+.whyPtable{
+    display: table;
+}
+
+.whyProw{
+    display: table-row;
+}
+
+.whyPcell{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 40px;
+    padding-left: 100px;
+}
+.tall{
+    padding-left: 100px;
+}
+
+.welcome{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 3em;
+    color: darkblue;
+}
+
+.smallYellow2{
+    background-color: gold;
+    width: 100px;
+    border-radius: 20px;
+}
+
+a.downloadPy{
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+}
+
+a.downloadPy:hover{
+    background-color: #fffdd0;
+    padding: 10px;
+}
+
+/*Second Layout Table*/
+
+.statPtable{
+    display: table;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.statProw{
+    display: table-row;
+}
+
+.statPcell{
+    display: table-cell;
+    padding: 10px;
+    background-color: white;
+}
+
+.statimg{
+    width: 500px;
+}
+
+.empty{
+    width: 80px;
+    background-color:#180148 ;
+}/* Global Styles */
+main {
+    padding: 0;
+    margin: 0;
+    background-color: #180148;
+}
+
+/* First Section Styles */
+section.backgroundImg1 {
+    background-image: url('../images/backdrop1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 600px;
+    width: 100%;
+}
+
+div.welcomeText {
+    width: 100%;
+    text-align: center;
+}
+
+.welcomeheading {
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+
+.learnButton {
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    display: inline-block;
+}
+
+a.learnButton:hover {
+    background-color: #fffdd0;
+}
+
+.expect {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    color: beige;
+    text-shadow: 0 0 10px rgb(11, 11, 11);
+}
+
+.smallYellow {
+    background-color: gold;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.expectation {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: beige;
+    text-shadow: 0 0 10px rgb(11, 11, 11);
+}
+
+/* First Layout Table Styles */
+.whyPtable {
+    width: 100%;
+    display: block;
+}
+
+.whyProw {
+    display: block;
+}
+
+.whyPcell, .tall {
+    padding: 10px;
+}
+
+.welcome {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    color: darkblue;
+}
+
+.smallYellow2 {
+    background-color: gold;
+    width: 100px;
+    border-radius: 20px;
+}
+
+a.downloadPy {
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    display: inline-block;
+}
+
+a.downloadPy:hover {
+    background-color: #fffdd0;
+}
+
+/* Second Layout Table Styles */
+.statPtable {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.statProw {
+    display: block;
+}
+
+.statPcell {
+    padding: 10px;
+    background-color: white;
+}
+
+.statimg {
+    max-width: 100%;
+    height: auto;
+}
+
+.empty {
+    width: 100%;
+    background-color: #180148;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+    /* Adjust styles for screens wider than 768px */
+    div.welcomeText {
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+        float: left;
+    }
+
+    .whyPcell {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Adjust styles for screens wider than 1024px */
+    div.welcomeText {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .whyPcell, .tall {
+        padding-left: 50px;
+    }
+}

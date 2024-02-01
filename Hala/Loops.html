@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link rel="stylesheet" type="text/css" href="Style/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="Style/loops.css">
+    <link rel="stylesheet" type="text/css" href="Style/codePage.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <div class="menuList">
+                <nav>
+                  <img class="SM" src="images/fb logo.png" alt="" />
+                  <img class="SM" src="images/insta logo.png" alt="" />
+                  <img class="SM" src="images/twitter logo.png" alt="" />
+                  <a href="index.html">Home</a>
+                  <div class="dropdown">
+                    <button class="">Basics</button>
+                    <div class="dropdown-content">
+                      <a href="Variables.html">Variables</a>
+                      <a href="Data Types.html">Data Types</a>
+                      <a href="operators.html">Operators</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="dropdown">
+                    <button class="">Advanced</button>
+                    <div class="dropdown-content">
+                      <a href="ifStatments.html">If Statments</a>
+                      <a href="Loops.html">Loops</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="Feedback.html">FeedBack</a>
+                  <aside>
+                    <a href="phpscripts/logout.php">Log out</a>
+                  </aside>
+                </nav>
+              </div>
+        </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <article>
+            <h1 class="secHeader">Welcome to python Loops</h1>
+            <p>
+                In pyhton we have two primative types of loops:
+                <ul>
+                    <li>While Loops</li>
+                    <li>For Loops</li>
+                </ul>
+            </p>
+            <section class="varDec">
+                <div class="declaration">
+                    <h2>While Loops</h3>
+                    <p class="decDesc">
+                        A <span class="bold">while loop</span> will execute a statment or multiple statements as long as the given condition is met.
+                    </p>
+                    <div class="outerCodeCell">
+                        Example
+                        <div class="innerCodeCell">
+                            i = 0 <br>
+                            while i < 10: <br>
+                            <span class="loopIndent">print(i)</span> <br>
+                            <span class="loopIndent">i += 1</span> <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="varDec varDesc2">
+                <div class="declaration">
+                    <h2>For Loops</h3>
+                    <p class="decDesc">
+                        A for loop is used for iterating over a sequence, unlike other programming languages the for keyword here works more like an iterator method as found in other object-orientated programming languages. <br>
+                        With the <span class="bold">For loop</span> we can execute a set of statements, once for each item in a list, tuple, set.                    
+                    </p>
+                    <div class="outerCodeCell">
+                        Example:
+                        Print all the subjects in the given list.
+                        <div class="innerCodeCell">
+                            Subjects = ["Science", "Math", "English","IT"] <br>
+                            for x in Subjects: <br>
+                            <span class="loopIndent">print(x)</span> <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <section class="diffProp">
+            <h2 class="secHeader">Different Loops/Functions:</h2>
+            <br><nav class="prop">
+                <a href="#break">Break Statement</a>
+                <a href="#continue">Continue Statement</a>
+                <a href="#range">Range Function</a>
+                <a href="#nested">Nested Loops</a>
+            </nav>
+        </section>
+        <hr>
+        <section id="break">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                       <h2>The Break Statement:</h2>
+                       <p class="explanation">
+                        With the <span class="bold">break</span> statement we can stop the loop before it has looped through all the items.<span class="spacingCell">------------------------------------------------------------------------------</span>
+                    </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                Subjects = ["Science", "Math", "English","IT"] <br>
+                                for x in Subjects: <br>
+                                <span class="loopIndent">print(x)</span> <br>
+                                <span class="loopIndent">if x == "Math":</span> <br>
+                                <span class="loopIndent"><span class="loopIndent">break</span></span>  <br>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="continue">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>The Continue Statement:</h2>
+                        <p class="explanation">
+                            With the <span class="bold">continue</span> statement we can stop the current iteration of the loop, and continue with the next: <span class="spacingCell">------------------------------------------------------------------------------</span>
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                Subjects = ["Science", "Math", "English","IT"] <br>
+                                for x in Subjects: <br>
+                                <span class="loopIndent">print(x)</span> <br>
+                                <span class="loopIndent">if x == "Math":</span> <br>
+                                <span class="loopIndent"><span class="loopIndent">continue</span></span>  <br>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="range">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                    <h2>Range Function:</h2>
+                    <p>
+                        To loop through a set of code a specified number of times, we can use the range() function,
+                        The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.                    
+                    </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                for x in range(6): <br>
+                                <span class="loopIndent">print(x)</span> <br>
+                                <span class="codeComment"># Here the values are <span class="bold">not 0 - 6</span> but they are 0 - 5</span> <br>
+                                <br><span class="codeComment"># We can also set a starting point fro the loop: </span> <br>
+                                for i in range(2,10): <br>
+                                <span class="loopIndent">print(i)</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="nested">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Nested Loops:</h2>
+                        <p>
+                            A nested loop is a <span class="bold">loop inside a loop</span>. <br>
+                            The "inner loop" will be executed one time for each iteration of the "outer loop": <span class="spacingCell">------------------------------------------------------------------------------</span>
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                grade = ["97", "89", "95", "99"] <br>
+                                subj = ["Science", "Math", "English","IT"] <br>
+                                for i in grade: <br>
+                                <span class="loopIndent"> for j in subj:</span> <br>
+                                <span class="loopIndent"><span class="loopIndent">print( i , j )</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            Phone: 1234567899<br>
+            Fax: 7845965845<br>
+            Email: Prog101@gmail.com
+            <p class="rights">
+                ALL RIGHTS RESERVED &reg;
+            </p>
+        </div>
+    </footer> 
+</body>
+</html>

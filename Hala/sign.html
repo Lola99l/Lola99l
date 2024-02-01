@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Log in / Sign up</title>
+    <link rel="stylesheet" href="Style/sign.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="container-forms">
+        <div class="container-info">
+          <div class="info-item">
+            <div class="table">
+              <div class="table-cell">
+                <p>Have an account?</p>
+                <div class="btn">Log in</div>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="table">
+              <div class="table-cell">
+                <p>Don't have an account?</p>
+                <div class="btn">Sign up</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-form">
+          <form action="phpscripts/login.php" method="post">
+            <div class="form-item log-in">
+              <div class="table">
+                <div class="table-cell">
+                  <input
+                    name="UsernameL"
+                    placeholder="Username"
+                    type="text"
+                  /><input
+                    name="PasswordL"
+                    placeholder="Password"
+                    type="Password"
+                  />
+                  <input
+                    type="submit"
+                    name="login"
+                    value="Log in"
+                    class="sbtn"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <form action="phpscripts/signup.php" method="post">
+            <div class="form-item sign-up">
+              <div class="table">
+                <div class="table-cell">
+                  <input name="Email" placeholder="Email" type="text" />
+                  <input
+                    name="fullName"
+                    placeholder="Full Name"
+                    type="text"
+                  /><input
+                    name="Username"
+                    placeholder="Username"
+                    type="text"
+                  /><input
+                    name="Password"
+                    placeholder="Password"
+                    type="Password"
+                  />
+                  <input
+                    type="submit"
+                    name="signup"
+                    value="Sign up"
+                    class="sbtn"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="scripts/sign.js"></script>
+  </body>
+</html>

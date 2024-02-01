@@ -1,0 +1,90 @@
+body{
+    background-color:#180148;
+}
+
+section, article{
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+article h1{
+    font-size: 3em;
+    text-align: center;
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+ 
+article p{
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+.bold{
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+}
+
+.diffOps{
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+}
+
+.diffOps a{
+    color: white;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+
+}
+
+table,td,th{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    border-radius: 25px;
+    padding: 8px;
+    width: 80%;
+    text-align: left;
+    margin-left: 30px;
+    border: thin solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.mathOps{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    border: thin solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#comparision{
+    margin-bottom: 20px;
+}
+
+.quiz h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    word-spacing: 3px;
+    
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.testNew{
+    font-size: larger;
+    text-align: center;
+}

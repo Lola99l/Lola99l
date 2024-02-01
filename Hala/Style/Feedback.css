@@ -1,0 +1,242 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+.SM {
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+    mix-blend-mode: color-burn;
+    margin-top: 0px;
+}
+
+header {
+    background-color: #999ede;
+    color: beige;
+    line-height: 1.25;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+
+aside {
+    float: right;
+}
+
+.nav {
+    text-align: center;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    font-weight: normal;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 300%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: rgb(15, 15, 15);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding-right: 50px;
+    color: rgb(15, 15, 15);
+    font-size: large;
+    font-weight: bold;
+    width: 30px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.menuList {
+    width: 100%;
+    margin-right: 0px;
+}
+
+/* Body Styles */
+body {
+    background-image: url('../images/sl_031022_49100_01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 945px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    color: black;
+}
+
+/* Page Layout Styles */
+.pageTable {
+    display: table;
+    width: 100%;
+}
+
+.pageRow {
+    display: table-row;
+}
+
+.pageCell {
+    display: table-cell;
+    padding-right: 20px;
+}
+
+/* Feedback Styles */
+.feedbackTable {
+    display: table;
+    width: 100%;
+}
+
+.feedbackRow {
+    display: table-row;
+    padding: 5px;
+}
+
+.feedbackCell {
+    display: table-cell;
+    padding: 5px;
+}
+
+fieldset {
+    border-radius: 25px;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.italicParagraph {
+    font-style: italic;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.genderSelect {
+    list-style: none;
+}
+
+.feedbackForm {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.feedbackHead {
+    text-align: center;
+}
+
+.midP {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 10px;
+}
+
+.rights {
+    color: grey;
+    font-size: smaller;
+    position: relative;
+    float: right;
+    margin-bottom: 0px;
+}
+
+/* Responsive Design with Media Queries */
+@media screen and (max-width: 768px) {
+    .SM {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    aside {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    button {
+        padding-right: 20px;
+    }
+
+    a {
+        padding: 10px;
+    }
+
+    .menuList {
+        margin-right: 0;
+    }
+
+    body {
+        background-size: contain;
+        height: auto;
+    }
+
+    main {
+        border-radius: 0;
+    }
+
+    .pageCell {
+        padding-right: 10px;
+    }
+
+    .feedbackForm {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .feedbackHead {
+        margin-left: 0;
+    }
+
+    .midP {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+    <link rel="stylesheet" type="text/css" href="Style/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="Style/codePage.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menuList">
+            <nav>
+              <img class="SM" src="images/fb logo.png" alt="" />
+              <img class="SM" src="images/insta logo.png" alt="" />
+              <img class="SM" src="images/twitter logo.png" alt="" />
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                <button class="">Basics</button>
+                <div class="dropdown-content">
+                  <a href="Variables.html">Variables</a>
+                  <a href="Data Types.html">Data Types</a>
+                  <a href="operators.html">Operators</a>
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="dropdown">
+                <button class="">Advanced</button>
+                <div class="dropdown-content">
+                  <a href="ifStatments.html">If Statments</a>
+                  <a href="Loops.html">Loops</a>
+                  
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="Feedback.html">FeedBack</a>
+              <aside>
+                <a href="phpscripts/logout.php">Log out</a>
+              </aside>
+            </nav>
+          </div>
+        <br>
+    </header>
+    <main>
+        <article>
+            <h1 class="secHeader">Data Types</h1>
+            <p>
+                A data type in python is a, classification which specifies what is the type of the <span class="bold">Value</span>
+                and what type of <span class="bold">mathematical, logical</span> opertaoins can be done on them.   
+            </p>
+            <section class="varDec">
+                <div class="declaration">
+                    <h2>Example on Data Type</h3>
+                    <p class="decDesc">
+                        Python is a dynamically-typed language. Which means there is no need to specifiy a type for the virables on declration. 
+                    </p>
+                    <div class="outerCodeCell">
+                        Example
+                        <div class="innerCodeCell">
+                            num = 5  <span class="codeComment"># A variable of data type (int)</span><br>
+                            codinglang = "python" <span class="codeComment"># A variable of data type (str = String)</span><br>
+                            <br><span class="codeComment"># To Know the types of our variables we can use the built-in function type()</span> <br>
+                            <br> print(type(a)) <span class="codeComment"># It will print the type which is int (intger)</span> <br>
+                            print(type(b)) <span class="codeComment">It will print the type which is str (String)</span> <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <section class="diffProp">
+            <h2 class="secHeader">Basic Data Types</h2>
+            <p>
+                <br> In python there are many data types used for vareing applecations. each data type store its value-values in a diifernet way from the other as we will see.
+            </p>
+            <br><nav class="prop">
+                <a href="#casting">Text Type</a>
+                <a href="#typeObtaining">Numeric Types</a>
+                <a href="#Quotation">Sequence Types</a>
+                <a href="#caseSensitivity">Boolean Type</a>
+            </nav>
+        </section>
+        <hr>
+        <section id="casting">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                       <h2>Text Type:</h2>
+                       <p class="explanation">
+                           Text type, In python we have the String data type which is used to store words or any input,text. The 
+                           str data type will store anything as the user did write.
+                       </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                X = str(3) <span class="codeComment"># X will be saved as 3 as a letter not as a number<br>
+                                Y = 'I love python' <span class="codeComment"># Y will store 'I love python'</span> <br>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="typeObtaining">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Numeric Types:</h2>
+                        <p class="explanation">
+                            As a start we only need to use 2 Numeric data types which are, int and float. Int is used to store <span class="bold"> integer</span> values and float is used to store numbers with <span class="bold"> decimal</span>decimal points.
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                X = 10 <span class="codeComment"> # X is an int value that store 10</span><br>
+                                Y = 5.7 <span class="codeComment"> # Y is an float value that store 5.7</span><br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="Quotation">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                    <h2>Sequence Types:</h2>
+                    <p>
+                        The Sequence Types are a little differnet from the int,float and str data types. The Sequence Types is used to store more than one value 
+                        at a time. you can think of it like a train, each champer will hold a person, and the number of chmapers depened on the length of the train. each champer is a cell in a data type called list.
+                    <p>
+                        onther type of Sequence Types is tuple.
+                    </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                train = [1,2,3] <br> <span class="codeComment"># Here the train variable is list that contains the numbers 1,2, and 3</span> <br>
+                                train2 = ('day','night') <br> <span class="codeComment">#  A tuple which has to values day and night</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <hr>
+        <section id="caseSensitivity">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Boolean Type:</h2>
+                        <p>
+                            The boolean data type is simple it can cold 1 of 2 values which are true or false.
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                happy = true <br> <span class="codeComment"> # A variable called happy and hold a value of true</span>
+                                student = false  <br><span class="codeComment"> # A variable called student and hold a value of false</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <section class="quiz">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell">
+                         <h2>Quick Quiz</h2>
+                         <p class="testNew">
+                             Test your newly obtained skills.
+                         </p>
+                    </div>
+                </div>
+                <div class="codeRow">
+                    <div class="codeCell">
+                     <h3>Insert Question Here</h3>
+                     <div class="outerCodeCell TIYS">
+                         Try it for yourself:
+                         <div class="innerCodeCell">
+                            <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+                    </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            Phone: 1234567899<br>
+            Fax: 7845965845<br>
+            Email: Prog101@gmail.com
+            <p class="rights">
+                ALL RIGHTS RESERVED &reg;
+            </p>
+        </div>
+    </footer> 
+</body>
+</html>

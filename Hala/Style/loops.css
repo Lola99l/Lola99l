@@ -1,0 +1,165 @@
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+.varDec{
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    text-shadow: none;
+    color: black;
+}
+
+article{
+    padding-bottom: 30px;
+}
+
+.codeTable{
+    display: table;
+}
+
+.codeRow{
+    display: table-row;
+}
+
+.codeCell{
+    display: table-cell;
+    padding-left: 32px;
+    padding-bottom: 4ex;
+}
+
+article h1{
+    font-size: 3em;
+    text-align: center;
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+.bold{
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+}
+
+article p{
+    font-size: 20px;
+    text-align: center;
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+ul{
+    font-size: 20px;
+    text-align: center;
+    color:red;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgb(11, 11, 11);
+    list-style-type: none;
+}
+
+p q{
+    font-style: italic  ;
+}
+
+.varDec{
+    padding-top: 3ex;
+}
+
+.varDesc2{
+    margin-top: 4ex;
+}
+
+.spacingCell{
+    color: rgb(15, 15, 15);
+}
+
+article h2{
+    text-align: center;
+}
+
+.decDesc{
+    text-shadow: none;
+    color: black;
+}
+
+.outerCodeCell{
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 25px;
+    text-shadow: none;
+    color: black;
+}
+
+.innerCodeCell{
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    text-shadow: none;
+    color: black;
+}
+
+.codeComment{
+    color: green;
+}
+
+.diffProp{
+    vertical-align: middle;
+    text-align: center;
+    padding: 30px;
+    height: 200px;
+}
+
+.diffProp a{
+    color: beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+
+}
+
+/* ask how to span the cell over all the page */
+/* .tryItYourself{
+    width: 100%;
+} */
+
+textarea{
+    border-radius: 25px;
+    border: none;
+}
+
+.TIYS{
+    margin-bottom: 3em;
+}
+
+.propDescriptions{
+    width: 70%;
+}
+
+.explanation{
+    line-height: 1.5;
+}
+
+section{
+    color:beige;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+}
+
+.loopIndent{
+    padding-left: 40px;
+}
+
+.quiz h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    word-spacing: 3px;
+    
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.testNew{
+    font-size: larger;
+    text-align: center;
+}

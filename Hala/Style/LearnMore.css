@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+section.block1{
+    background-image: url('../images/python-logo-4k-i6.jpg');
+    background-repeat: no-repeat;
+    background-size:100% ;
+    color: white;
+    height: 800px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+h1.welcomeheadding{
+    position: absolute;
+    top: 65px;
+    left: 635px;
+    font-size: 70px;
+    color:beige;
+    line-height: 1.25;
+    text-shadow: white;
+
+}
+p.headertext {
+    position: absolute;
+    top: 750px;
+    left: 610px;
+    
+    font-size: 25px;
+    color:beige;
+    line-height: 1.25;
+    text-shadow: white;
+}
+p.headertextbot{
+    position: absolute;
+    top: 800px;
+    left: 510px;
+    
+    font-size: 20px;
+    color:beige;
+    line-height: 1.25;
+    text-shadow:white;
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*Block 2*/
+section.block2{
+    background-image: url('../images/python-logo-4k1-i6.jpg');
+    background-repeat: no-repeat;
+    background-size:100% ;
+    color: white;
+    height: 800px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}
+
+div.layouttable{
+    display: table;
+    margin: auto;
+}
+div.row{
+    display: table-row;
+}
+h1.secblo{
+    font-size: 70px;
+}
+div.cell1{
+    display: table-cell;
+    text-align: left;
+    width: 450px;
+    font-size: 20px;
+    color:beige;
+    line-height: 1.25;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+    
+    
+}
+div.cell2{
+    display: table-cell;
+    padding-top: 155px;
+    width: 450px;
+    font-size: 20px;
+    color:beige;
+    line-height: 1.25;
+    text-shadow: 0 0 20px rgb(11, 11, 11)
+    
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*Block 3*/
+
+section.block3{
+    background-size:100% ;
+    color: white;
+    height: 800px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}
+
+div.layouttable2{
+    display: table;
+    padding: 50px;
+}
+
+div.row{
+    display: table-row;
+}
+
+div.cell3{
+    display: table-cell;
+    padding-left: 100px;
+    
+}
+div.cell4{
+    display: table-cell;
+    padding-left: 250px;
+    width: 650px;
+    vertical-align: middle;
+    color:beige;
+    line-height: 1.25;
+    text-shadow:white;
+    
+}
+div.cell5{
+    display: table-cell;
+    font-style: italic ;
+    font-size: 35px;
+    padding-left: 100px;
+    vertical-align: middle;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+div.cell6{
+    display: table-cell;
+    padding-left: 250px;
+    vertical-align: middle;
+    color:beige;
+    line-height: 1.25;
+    text-shadow: white;
+}
+div.cell7{
+    display: table-cell;
+    padding-left: 100px;
+    
+}
+div.cell8{
+    display: table-cell;
+    padding-left: 250px;
+    vertical-align: middle;
+    color:beige;
+    line-height: 1.25;
+    text-shadow:white;
+}
+img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+img.img1{
+    width: 340px;
+    height: 200px;
+    border-radius: 5%;
+
+}
+img.img2{
+    width: 340px;
+    height: 200px;
+    border-radius: 5%;
+}

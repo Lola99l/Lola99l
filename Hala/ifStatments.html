@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statments</title>
+    <link rel="stylesheet" type="text/css" href="Style/generalStyle.css">
+    <link rel="stylesheet" type="text/css" href="Style/ifStatement.css">
+    <link rel="stylesheet" href="Style/codePage.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="menuList">
+                <nav>
+                  <img class="SM" src="images/fb logo.png" alt="" />
+                  <img class="SM" src="images/insta logo.png" alt="" />
+                  <img class="SM" src="images/twitter logo.png" alt="" />
+                  <a href="index.html">Home</a>
+                  <div class="dropdown">
+                    <button class="">Basics</button>
+                    <div class="dropdown-content">
+                      <a href="Variables.html">Variables</a>
+                      <a href="Data Types.html">Data Types</a>
+                      <a href="operators.html">Operators</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="dropdown">
+                    <button class="">Advanced</button>
+                    <div class="dropdown-content">
+                      <a href="ifStatments.html">If Statments</a>
+                      <a href="Loops.html">Loops</a>
+                      
+                    </div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="Feedback.html">FeedBack</a>
+                  <aside>
+                    <a href="phpscripts/logout.php">Log out</a>
+                  </aside>
+                </nav>
+              </div>
+        </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <article>
+            <h1 class="secHeader">What are If Statments?
+            </h1>
+            <p>
+                If Statments are declared in ones programe with the use of <span class="bold">conditional statements</span> to determine witch of the actions specified by the user is going to put in play. The conditional statments are the same ones mentiond in the <span class="bold">Operators</span> section of the website.  
+            </p>
+            <section class="ifDec">
+                <div class="baseIf">
+                    <h2>Basic If Statment</h3>
+                    <p class="baseIfDesc">
+                        When declaring the "If statments" the if keyword must be used.
+                    </p>
+                    <div class="outerCodeCell">
+                        Example
+                        <div class="innerCodeCell">
+                            a = 200 <br>
+                            b = 300 <br>
+                            <br> if a < b:  <br>
+                            <span class="codeComment"># The print statement will only run if the condition above is met</span> <br>
+                            <span class="ifIndent">print("b is greater than a") <br>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+            <section class="indentError">
+                <div class="IndError">
+                    <h2>Indentation</h2>
+                    <p class="indentImportance">
+                        <span class="bold">If statement, without indentation (will raise an error):</span> 
+                    </p>
+                    <div class="outerCodeCell">
+                        Example
+                        <div class="innerCodeCell">
+                            a = 200 <br>
+                            b = 300 <br>
+                            <br> if a < b:  <br>
+                            <span class="codeComment"># The print statement will only run if the condition above is met</span> <br>
+                            print("b is greater than a") <br>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <section class="diffIfs">
+            <h2 class="secHeader">Different If Statment Variants:</h2>
+            <p>
+                <br> If statements can be done with a singular condition or multiple conditions. Based on the intended functionality of the statement one of the following Variants and properties may be of assistance:
+            </p>
+            <br><nav class="prop">
+                <a href="#elif">Elif</a>
+                <a href="#else">Else</a>
+                <a href="#shortHandIf">Short Hand If</a>
+                <a href="#shortHandIfElse">Short Hand If Else</a>
+                <a href="#and">AND</a>
+                <a href="#or">OR</a>
+                <a href="#nestedIf">Nested If</a>
+                <a href="#pass">Pass Statement</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <section id="elif">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                       <h2>Elif:</h2>
+                       <p class="explanation">
+                           The <span class="bold">elif</span> keyword in python translates simply into, "if the previous conditions were not true, then try this condition".
+                       </p>
+                       <p>
+                           In the given code block example, we gave the if statment an alternative in the form of the elif statment; where it will visit if the initial if statment wasnt met.
+                       </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 100 <br>
+                                if a < b:  <br>
+                                <span class="ifIndent">pirnt("a is less than b")</span> <br>
+                                elif a == b: <br>
+                                <span class="ifIndent">print("a and b are equal")</span>   <br>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="else">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Else:</h2>
+                        <p class="explanation">
+                            The <span class="bold">else</span> statement will act as a sort of default; if all the preceding if statments were not met, the action or value we have given the <span class="bold">else</span> statment will be taken.
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 50 <br>
+                                if b > a: <br>
+                                <span class="ifIndent">print("b is greater than a")</span> <br>
+                                else: <br>
+                                <span class="ifIndent">print("b is not greater than a")</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <section>
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <p class="explanation secondOption">
+                            <br><br><br>
+                            The <span class="bold">else</span> statement does not only work with the single if statment, it can works with the <span class="bold">elif</span> statment as well, when put together they form a single coherent conditional code block that covers all the wanted posibilities.
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 50 <br>
+                                if b > a: <br>
+                                <span class="ifIndent">print("b is greater than a")</span> <br>
+                                elif a == b:i <br>
+                                <span class="ifIndent">print("a and b are equal")</span> <br>
+                                else: <br>
+                                <span class="ifIndent">print("a is greater than b")</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="shortHandIf">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                    <h2>Short Hand If:</h2>
+                    <p>
+                        If you have only one statement to execute, you can put it on the same line as the if statement. <span class="spacingCell">--------------------------------------------------------------    </span>
+                    </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 50 <br>
+                                if a > b: print("a is greater than b") <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="shortHandIfElse">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Short Hand If Else:</h2>
+                        <p>
+                            If you have only one statement to execute, one for if, and one for else, you can put it all on the same line: <span class="spacingCell">--------------------------------------------------------------    </span>
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 300 <br>
+                                print("A") if a > b else print("B") <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <section>
+        <div class="codeTable">
+            <div class="codeRow">
+                <div class="codeCell propDescriptions">
+                    <p>
+                        <br><br><br>
+                        You can also have multiple else statements on the same line:<span class="spacingCell">--------------------------------------------------------------    </span>
+                    </p>
+                </div>
+                <div class="codeCell exCode">
+                    <div class="outerCodeCell">
+                        Example
+                        <div class="innerCodeCell">
+                            a = 150 <br>
+                            b = 150 <br>
+                            print("A") if a > b else print("=") if a == b else print("B") <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outerCodeCell TIYS">
+            Try it for yourself:
+            <div class="innerCodeCell">
+                <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+        </div>
+    </section>
+
+        <hr>
+
+        <section id="and">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>AND</h2>
+                        <p>
+                            The <span class="bold">and</span> keyword is a logical operator, and is used to combine conditional statements:<span class="spacingCell">------------------------------------------------------------------------------</span>
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 50 <br>
+                                c = 200 <br>
+                                if a > b and c > a: <br>
+                                <span class="ifIndent">print("Both conditions are True") <br>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="or">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Or</h2>
+                        <p>
+                            The <span class="bold">or</span> keyword is a logical operator, and is used to combine conditional statements:<span class="spacingCell">------------------------------------------------------------------------------</span>
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                b = 50 <br>
+                                c = 200 <br>
+                                if a > b or a > c: <br>
+                                <span class="ifIndent">print("At least one of the conditions is True"</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="nestedIf">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Nested If:</h2>
+                        <p>
+                            You can have <span class="bold">if</span> statements inside <span class="bold">if</span> statements, this is called nested if statements.<span class="spacingCell">------------------------------------------------------------------------------</span>
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 100 <br>
+                                if a > 10: <br>
+                                <span class="ifIndent">print("Above ten,")</span> <br>
+                                <span class="ifIndent">if a > 20:</span> <br>
+                                <span class="ifIndent"><span class="ifIndent">print("and also above 20!")</span></span> <br>
+                                <span class="ifIndent">else:</span> <br>
+                                <span class="ifIndent"><span class="ifIndent">print("but not above 20.")</span></span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="pass">
+            <div class="codeTable">
+                <div class="codeRow">
+                    <div class="codeCell propDescriptions">
+                        <h2>Pass Statement</h2>
+                        <p>
+                            if statements <span class="bold">cannot be empty</span>, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.
+                        </p>
+                    </div>
+                    <div class="codeCell exCode">
+                        <div class="outerCodeCell">
+                            Example
+                            <div class="innerCodeCell">
+                                a = 50 <br>
+                                b = 100 <br>
+                                if b > a: <br>
+                                <span class="ifIndent">pass</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerCodeCell TIYS">
+                Try it for yourself:
+                <div class="innerCodeCell">
+                    <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+            </div>
+        </section>
+        <section class="quiz">
+           <div class="codeTable">
+               <div class="codeRow">
+                   <div class="codeCell">
+                        <h2>Quick Quiz</h2>
+                        <p class="testNew">
+                            Test your newly obtained skills.
+                        </p>
+                   </div>
+               </div>
+               <div class="codeRow">
+                   <div class="codeCell">
+                    <h3>Insert Question Here</h3>
+                    <div class="outerCodeCell TIYS">
+                        Try it for yourself:
+                        <div class="innerCodeCell">
+                            <div><py-repl id="my-repl" auto-generate=true> </py-repl></div>     
+                    </div>
+                   </div>
+               </div>
+           </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            Phone: 1234567899<br>
+            Fax: 7845965845<br>
+            Email: Prog101@gmail.com
+            <p class="rights">
+                ALL RIGHTS RESERVED &reg;
+            </p>
+        </div>
+    </footer> 
+</body>
+</html>
